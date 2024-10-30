@@ -1,0 +1,16 @@
+/* AdmninFormStyle.module.css */
+
+/* F O N D O */
+.mainContainer {
+    width: 100vw;
+    height: 100vh;
+    font-family: Roboto, sans-serif, Arial;
+    background-color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
