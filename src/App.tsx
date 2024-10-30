@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import IndexForm from './components/static/IndexForm';
 import StudentForm from './components/static/StudentForm';
 import ProfesorForm from './components/static/ProfesorForm';
-import LoginForm from './components/static/LoginForm';
+import LoginForm from './components/static/Login';
 
 import AdminPage from './components/dinamic/AdminPage';
 

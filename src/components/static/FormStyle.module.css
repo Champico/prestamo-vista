@@ -1,7 +1,7 @@
 /* Estilos generales */
-.body{
+.mainContainer{
     font-family: Arial, sans-serif;
-    background-image: url(../img/1.jpg);
+    background-image: url("/Img/1.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,19 +9,22 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
-}
-.h1{
+    width: 100vw;
     margin: 0;
 }
 
-.h2{
+.mainTitle{
+    margin: 0;
+}
+
+.typeUser{
     margin: 0;
     margin-bottom: 7px;
     color: #202020;
 }
+
 /* Contenedor del formulario */
-.form-container {
+.formContainer {
     background-color: #218c45;
     padding: 20px;
     border-radius: 8px;
@@ -39,10 +42,38 @@
 .label {
     margin-bottom: 5px;
     font-weight: bold;
-    margin-bottom:10px;
+    margin-bottom:12px;
+    display: block;
 }
 
-.input[type="text"], .input[type="date"], .select {
+.input[type=text], .select {
+
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+
+}
+
+.select{
+    width: 100%;
+}
+
+.input:hover, .select:hover {
+    border: 1px solid #218c45;
+    color: #18529d;
+}
+
+.campoFechaHora {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas de igual tamaño */
+    grid-template-rows: repeat(2, 1fr);    /* 4 filas de igual tamaño */
+    column-gap: 30px; /* Espacio de 20px entre las filas */
+    height: 80px;
+}
+
+.input[type=date], .input[type=time]{
     padding: 8px;
     margin-bottom: 15px;
     border: 1px solid #ccc;
@@ -50,14 +81,9 @@
     font-size: 14px;
 }
 
-.input[type="text"]:hover, .input[type="date"]:hover, .select:hover {
-    border: 1px solid #218c45;
-    color: #18529d;
-    
-}
 
 /* Estilos del bot0n de enviar */
-.button[type="submit"] {
+.button{
     padding: 10px;
     background-color: #18529d;
     color: white;
@@ -65,8 +91,9 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 16px;
+    margin-top: 10px;
 }
 
-.button[type="submit"]:hover {
+.button:hover {
     background-color: #1c65c4;
 }
